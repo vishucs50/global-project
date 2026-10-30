@@ -1,4 +1,4 @@
-# NASA Earth Predictive Intelligence Dashboard (2026–2028)
+# NASA EarthPulse — Earth System Predictive Intelligence Dashboard (2026–2028)
 
 An Earth System science dashboard built with **Next.js (App Router)**, **Tailwind CSS**, and **TypeScript**, engineered to forecast key planetary parameters following NASA's real-time statistics from **October 2026**.
 
@@ -6,18 +6,15 @@ Deployed easily on [Vercel](https://vercel.com).
 
 ---
 
-## 📌 Executive Finding: Question 5 Resolution
+## 📌 Executive Findings: 2-Year Planetary Trajectory Analysis (2026 → 2028)
 
-### **Q: Based on NASA's real-time statistics for October 2026, which parameter tends to rise in the next 2 years?**
-
-### **Answer:**
 Based on NASA satellite telemetry (OCO-2/3, Sentinel-6, and GISTEMP v4) in **October 2026**, **Atmospheric Carbon Dioxide ($\text{CO}_2$)** and **Global Mean Sea Level (GMSL)** have the highest statistical certainty (>99.9%) of rising continuously and monotonically over the next 2 years (October 2026 → October 2028):
 
 1. **Atmospheric Carbon Dioxide ($\text{CO}_2$)**:
    - **October 2026 Level:** **`429.6 ppm`**
    - **October 2028 Forecast:** **`435.8 ppm`**
    - **2-Year Delta:** **`+6.2 ppm (+1.44%)`**
-   - **Mechanism:** Global emissions (~37 Gt $\text{CO}_2$/yr) exceed terrestrial biospheric drawdown and ocean solubility pump capacities.
+   - **Mechanism:** Global anthropogenic emissions (~37 Gt $\text{CO}_2$/yr) exceed terrestrial biospheric drawdown and ocean solubility pump capacities.
 2. **Global Mean Sea Level (GMSL)**:
    - **October 2026 Level:** **`109.8 mm`** (above 1993 altimetry baseline)
    - **October 2028 Forecast:** **`118.6 mm`**
@@ -56,56 +53,16 @@ Standard linear regressions underperform on planetary time-series data because t
 
 ---
 
-## 🚀 Features
-
-- 🛰️ **NASA Telemetry Baseline (October 2026)**: Covers $\text{CO}_2$, Sea Level, Temperature Anomaly, Methane ($\text{CH}_4$), Ocean Heat Content, and Arctic Ice Extent.
-- 📈 **Interactive Multi-Model Visualization**: Compare Ensemble ML, Holt-Winters, ARIMA, and Polynomial fits with 95% confidence intervals.
-- 🌍 **Canvas Earth Visualizer**: 3D animated globe featuring active NASA satellite orbits (OCO-2, Sentinel-6, AIRS).
-- 🎛️ **Scenario & Policy Simulator**: Test IPCC SSP1-2.6, SSP2-4.5, and SSP5-8.5 scenarios alongside custom emission modifiers.
-- 💾 **Data Export**: Export datasets to `.CSV` and `.JSON`.
-- ⚡ **Deployable on Vercel**: Fully optimized Next.js App Router project with zero server dependencies.
-
----
-
 ## 🛠️ Local Development & Deployment
 
 ### Run Locally
 ```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start the development server
 npm run dev
-
-# 3. Open in your browser
-http://localhost:3000
 ```
+Open in your browser: `http://localhost:3000`
 
 ### Deploy to Vercel
 
-#### Option 1: Vercel CLI (Instant)
 ```bash
 npx vercel
 ```
-
-#### Option 2: Git Push
-1. Push this directory to your GitHub account:
-   ```bash
-   git init
-   git add .
-   git commit -m "NASA Earth Predictive Dashboard"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
-2. Import the repository in [vercel.com/new](https://vercel.com/new) and click **Deploy**.
-
----
-
-## 📜 Provenance & Satellites
-- **$\text{CO}_2$ Data**: NASA Orbiting Carbon Observatory (OCO-2/3) & NOAA Mauna Loa Global Monitoring Laboratory (GML).
-- **Sea Level**: NASA/CNES/ESA Sentinel-6 Michael Freilich & Jason-3 Poseidon-4 Altimetry.
-- **Surface Temperature**: NASA Goddard Institute for Space Studies (GISS GISTEMP v4).
-- **Methane**: NASA EMIT & ESA Sentinel-5P TROPOMI.
-- **Ocean Heat**: NASA CERES & Argo International Profiling Float Array.
-
